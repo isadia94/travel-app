@@ -1,7 +1,7 @@
 import Image from "next/image";
 function DestinationsCard({ img, title, price, buttonText }) {
   return (
-    <div className="relative ">
+    <div className="relative cursor-pointer ">
       <div className="relative h-80 w-80   lg:h-[500px]">
         <Image
           src={img}
