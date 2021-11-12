@@ -1,7 +1,8 @@
+import { ChevronRightIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 function DestinationsCard({ img, title, price, buttonText }) {
   return (
-    <div className="relative cursor-pointer ">
+    <div className="relative cursor-pointer hover:scale-105 transition duration-300 ease-out ">
       <div className="relative h-80 w-80   lg:h-[500px]">
         <Image
           src={img}
@@ -19,8 +20,9 @@ function DestinationsCard({ img, title, price, buttonText }) {
           KES {price}
         </p>
       </div>
-      <button className=" font-poppins absolute bottom-[50px] left-[50%] transform translate-x-[-50%] text-white bg-[#26AA2B] px-6 py-1 shadow-md rounded-full font-light  hover:shadow-xl active:scale-90 transition duration-150">
+      <button className="flex items-center font-poppins absolute bottom-[50px] left-[50%] transform translate-x-[-50%] text-white bg-[#26AA2B] px-6 py-1 shadow-md rounded-full font-light  hover:shadow-xl active:scale-90 transition duration-150">
         {buttonText}
+        <ChevronRightIcon className="h-4 ml-1" />
       </button>
     </div>
   );

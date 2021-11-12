@@ -41,7 +41,7 @@ function Header() {
           <li>
             <Link href="/">
               <a className="text-[13px] text-gray-600 font-poppins font-medium hover:underline">
-                FLIGHTS
+                EVENTS
               </a>
             </Link>
           </li>

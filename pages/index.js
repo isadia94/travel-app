@@ -20,7 +20,9 @@ import HotelLarge from "../components/HotelLarge";
 import CarCard from "../components/CarCard";
 import twitter from "../images/twitter.png";
 import facebook from "../images/facebook.png";
+import youtube from "../images/youtube.png";
 import Image from "next/image";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
 export default function Home() {
   const destinations = [
@@ -94,14 +96,10 @@ export default function Home() {
       <Head>
         <title>Traveloo</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cookie&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cookie&family=Philosopher:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
@@ -113,26 +111,26 @@ export default function Home() {
       <main className="p-5 mt-4">
         <section>
           <div className="flex items-center justify-between">
-            <h2 className="font-cookie text-2xl sm:3xl font-medium md:text-4xl">
+            <h2 className="font-philosopher text-2xl sm:3xl font-medium md:text-4xl">
               Recommended Destinations
             </h2>
             <Link href="/pages/destinations">
               <a className="text-xs font-poppins font-medium">See All</a>
             </Link>
           </div>
-          <div className="flex overflow-scroll space-x-3 mt-8 ">
+          <div className="flex overflow-scroll scrollbar-hide space-x-3 mt-8 ">
             {destinations.map((item) => (
               <DestinationsCard
                 img={item.img}
                 title={item.title}
                 price={item.price}
-                buttonText="Explore More"
+                buttonText="Explore"
               />
             ))}
           </div>
         </section>
         <section className="mt-[40px]">
-          <h2 className="font-cookie text-2xl sm:3xl font-medium md:text-4xl">
+          <h2 className="font-philosopher text-2xl sm:3xl font-medium md:text-4xl">
             Amazing Stays
           </h2>
           <div className=" sm:mt-3 lg:grid lg:grid-cols-2">
@@ -177,17 +175,20 @@ export default function Home() {
         </section>
         <section className="mt-6">
           <div className="flex items-center space-x-8">
-            <h2 className="font-cookie text-2xl sm:3xl font-medium md:text-4xl">
+            <h2 className="font-philosopher text-2xl sm:3xl font-medium md:text-4xl">
               Car Rentals
             </h2>
             <Link href="/car-rentals">
-              <a className="font-poppins text-xs font-medium text-gray-600">
-                Explore More
-              </a>
+              <div className="flex items-center space-x-1">
+                <a className="font-poppins text-xs font-medium text-gray-600">
+                  Explore More
+                </a>
+                <ArrowRightIcon className="h-4 text-gray-600" />
+              </div>
             </Link>
           </div>
 
-          <div className=" md:flex md:overflow-scroll md:space-x-4">
+          <div className=" md:flex md:overflow-scroll scrollbar-hide md:space-x-4">
             {cars.map((car) => (
               <CarCard img={car.img} title={car.title} price={car.price} />
             ))}
@@ -259,7 +260,7 @@ export default function Home() {
         </div>
         <div className="mt-5 font-poppins font-medium flex justify-between items-center">
           <h4>Bonfire Adventures</h4>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 sm:space-x-4 cursor-pointer ">
             <div className="relative h-7 w-7 ">
               <Image src={twitter} layout="fill" objectFit="contain" />
             </div>
@@ -267,7 +268,7 @@ export default function Home() {
               <Image src={facebook} layout="fill" objectFit="contain" />
             </div>
             <div className="relative h-7 w-7 ">
-              <Image src={twitter} layout="fill" objectFit="contain" />
+              <Image src={youtube} layout="fill" objectFit="contain" />
             </div>
           </div>
         </div>

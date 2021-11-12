@@ -8,11 +8,12 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         cookie: ["Cookie", "cursive"],
         abril: ["Abril Fatface", "cursive"],
+        philosopher: ["Philosopher", "sans-serif"],
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

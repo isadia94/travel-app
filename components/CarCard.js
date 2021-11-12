@@ -1,7 +1,7 @@
 import Image from "next/image";
 function CarCard({ img, title, price }) {
   return (
-    <div className=" cursor-pointer mt-4 border-b relative border-black md:flex md:items-center md:space-x-2 md:border-none">
+    <div className=" cursor-pointer hover:scale-105 transition duration-300 ease-out mt-4 border-b relative border-black md:flex md:items-center md:space-x-2 md:border-none">
       <div className="relative h-40 md:h-60 md:w-60 flex-grow">
         <Image src={img} layout="fill" objectFit="contain" />
       </div>
