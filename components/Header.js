@@ -18,35 +18,35 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/destinations">
               <a className="text-[13px] text-gray-600 font-poppins font-medium hover:underline">
                 DESTINATIONS
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/hotels">
               <a className="text-[13px] text-gray-600 font-poppins font-medium hover:underline">
                 HOTELS
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/car-rentals.js">
               <a className="text-[13px] text-gray-600 font-poppins font-medium hover:underline">
                 CAR RENTALS
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/events">
               <a className="text-[13px] text-gray-600 font-poppins font-medium hover:underline">
                 EVENTS
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/about">
               <a className="text-[13px] text-gray-600 font-poppins font-medium hover:underline">
                 ABOUT US
               </a>
