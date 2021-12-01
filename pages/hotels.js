@@ -72,9 +72,7 @@ function hotels() {
             <HotelCard />
           </div>
         </section>
-        <section className="hidden lg:inline-flex lg:min-w-[600px]">
-          <Map />
-        </section>
+        <section className="hidden lg:inline-flex lg:min-w-[600px]"></section>
       </main>
       <Footer />
     </div>
