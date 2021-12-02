@@ -18,9 +18,7 @@ import Car5 from "../images/car5.jpg";
 import HotelSmall from "../components/HotelSmall";
 import HotelLarge from "../components/HotelLarge";
 import CarCard from "../components/CarCard";
-import twitter from "../images/twitter.png";
-import facebook from "../images/facebook.png";
-import youtube from "../images/youtube.png";
+
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import Footer from "../components/Footer";

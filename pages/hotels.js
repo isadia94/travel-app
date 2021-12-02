@@ -1,13 +1,17 @@
 import Header from "../components/Header";
 import Head from "next/head";
+import { useState } from "react";
 import Image from "next/image";
 import hot1 from "../images/hot4.jpg";
 import { UsersIcon } from "@heroicons/react/solid";
 import HotelCard from "../components/HotelCard";
 import Footer from "../components/Footer";
 import Map from "../components/Map";
+import items from "../hoteldata";
 
 function hotels() {
+  const [hotelItems, setHotelItems] = useState(items);
+
   return (
     <div>
       <Head>
@@ -63,16 +67,12 @@ function hotels() {
         <section>
           <h2 className="md:font-philosopher md:text-4xl">Hotels Near You</h2>
           <div className="mt-2">
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
-            <HotelCard />
+            <HotelCard hotelItems={hotelItems} />
           </div>
         </section>
-        <section className="hidden lg:inline-flex lg:min-w-[600px]"></section>
+        <section className="hidden lg:inline-flex lg:min-w-[600px]">
+          <Map />
+        </section>
       </main>
       <Footer />
     </div>
